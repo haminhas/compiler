@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83c960e3-3833-40a1-bff1-41d7e908365d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CFLCW3.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CFLCW3.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cflcw3.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CFLCW4.docx" afterPath="$PROJECT_DIR$/CFLCW4.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prog/prog.class" afterPath="$PROJECT_DIR$/prog/prog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cfl/compiler.scala" afterPath="$PROJECT_DIR$/src/cfl/compiler.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.j" afterPath="$PROJECT_DIR$/test.j" />
     </list>
     <ignored path="cflcw4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +27,8 @@
       <file leaf-file-name="compiler.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cfl/compiler.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1865">
-              <caret line="238" column="16" selection-start-line="238" selection-start-column="16" selection-end-line="238" selection-end-column="16" />
+            <state relative-caret-position="-1543">
+              <caret line="182" column="41" selection-start-line="182" selection-start-column="41" selection-end-line="182" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -754,12 +744,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481628790029</updated>
-      <workItem from="1481628791490" duration="2496000" />
+      <workItem from="1481628791490" duration="2558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2496000" />
+    <option name="totallyTimeSpent" value="2558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -830,8 +820,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cfl/compiler.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1865">
-          <caret line="238" column="16" selection-start-line="238" selection-start-column="16" selection-end-line="238" selection-end-column="16" />
+        <state relative-caret-position="-1543">
+          <caret line="182" column="41" selection-start-line="182" selection-start-column="41" selection-end-line="182" selection-end-column="41" />
           <folding />
         </state>
       </provider>

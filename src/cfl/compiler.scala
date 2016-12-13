@@ -168,7 +168,6 @@ Label2:
         List("\n" + loop_end + ":\n\n"), env1)
     }
     case Write(x) => {
-      println(x);
       if (x.isInstanceOf[Str]){
         val temp:String = eval_print(x,env)
         (List("ldc " + temp + "\n" +
