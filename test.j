@@ -17,6 +17,15 @@
     return
 .end method
 
+.method public static writes(Ljava/lang/String;)V
+  .limit stack 2
+  .limit locals 1
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  aload 0
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  return
+.end method
+
 .method public static read()I
     .limit locals 10
     .limit stack 10
@@ -55,16 +64,34 @@ Label2:
    .limit locals 200
    .limit stack 200
 
-                  ldc 2
+                  ldc "testword"
+invokestatic prog/prog/writes(Ljava/lang/String;)V
+ldc 1
 istore 0
 
 Loop_begin_0:
 
 iload 0
-ldc 4
+ldc 10
 if_icmpgt Loop_end_1
+ldc 1
+istore 0
+
+Loop_begin_2:
+
+iload 0
+ldc 10
+if_icmpgt Loop_end_3
 iload 0
 invokestatic prog/prog/write(I)V
+iload 0
+ldc 1
+iadd
+istore 0
+goto Loop_begin_2
+
+Loop_end_3:
+
 iload 0
 ldc 1
 iadd

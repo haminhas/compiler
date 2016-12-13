@@ -29,6 +29,15 @@ object compiler {
     return
 .end method
 
+.method public static writes(Ljava/lang/String;)V
+  .limit stack 2
+  .limit locals 1
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  aload 0
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  return
+.end method
+
 .method public static read()I
     .limit locals 10
     .limit stack 10
@@ -146,7 +155,6 @@ Label2:
     case For(a, b) => {
       val (instrs1, env1) = compile_stmt(a, env)
       val (instrs2, env2) = compile_stmt(b, env1)
-      println(b)
       (instrs1 ++ instrs2 ,env2)
     }
     case While(b, bl) => {
@@ -160,9 +168,16 @@ Label2:
         List("\n" + loop_end + ":\n\n"), env1)
     }
     case Write(x) => {
-      val temp:String = eval_print(x,env)
-      (List("iload " + env(temp) + "\n" +
-        "invokestatic XXX/XXX/write(I)V\n"), env)
+      println(x);
+      if (x.isInstanceOf[Str]){
+        val temp:String = eval_print(x,env)
+        (List("ldc " + temp + "\n" +
+          "invokestatic XXX/XXX/writes(Ljava/lang/String;)V\n"), env)
+      } else {
+        val temp: String = eval_print(x, env)
+        (List("iload " + env(temp) + "\n" +
+          "invokestatic XXX/XXX/write(I)V\n"), env)
+      }
     }
 
     case Read(x) => {
@@ -230,10 +245,14 @@ Label2:
          write fact
         }"""
 
-  val prog23 = """
-    for i := 2 upto 4 do {
-    write i
-                 }"""
+  val prog23 = """{
+    write "testword";
+    for i := 1 upto 10 do {
+      for i := 1 upto 10 do {
+        write i
+      }
+    }
+               }"""
 
   // prints out the JVM-assembly program
 
